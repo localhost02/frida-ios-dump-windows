@@ -38,6 +38,7 @@ User = 'root'
 Password = '1'
 Host = '172.16.43.18'
 Port = 22
+OutPath=r"C:\Users\86152\Desktop"
 KeyFileName = None
 
 TEMP_DIR = tempfile.gettempdir()
@@ -359,7 +360,7 @@ if __name__ == '__main__':
         ssh.close()
 
     if os.path.exists(PAYLOAD_PATH):
-        shutil.move(PAYLOAD_PATH, r"C:\Users\86152\Desktop")
+        shutil.move(PAYLOAD_PATH, OutPath)
     #if os.path.exists(PAYLOAD_PATH):
     #    shutil.rmtree(PAYLOAD_PATH)
 
